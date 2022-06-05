@@ -1,0 +1,87 @@
+#sheetTable {
+    display: none;
+    text-align: center;
+}
+
+#roundTable {
+	
+    display: none;
+    text-align: center;
+}
+header{
+	text-align: center;
+	font-family: 'PT Serif', serif;
+	 
+	
+}
+body  {
+	/*https://unsplash.com/photos/tW0Ix_Ajg6Y
+	background-image: linear-gradient(#DB7093,#FFE4E1);
+	*/
+	text-align: center;
+	background-image: url(pic/page3.jpg);
+	 position: relative;
+	object-fit: cover;
+	background-size: cover;
+	font-family: 'PT Serif', serif;
+	font-size: 15px;
+	
+	
+
+
+
+	
+}
+span{
+	text-align: center;
+	font-family: 'PT Serif', serif;
+	font-size: 19px;
+}
+
+ #width{
+	margin-left:auto;
+	margin-right:auto;
+	align-items: center; 
+}
+#information {
+	width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: rgb(192,192,192,0.5);  
+    padding: 50px;
+    font-size: 19px;
+}
+#options {
+text-align: center;
+padding-left: 25px;
+ align-items: center;
+ margin-left:auto; 
+  margin-right:auto;
+  font-family: 'PT Serif', serif;
+  
+}
+#bakery{
+	padding-top: 0;
+	vertical-align: top;
+}
+
+
+#title
+{
+	font-size: 20px;
+	font-weight: bolder;
+    color: white;
+}
+#main 
+{
+	height: 50px;
+}
+#secondcol
+{
+	width: 100px;
+}
+#mid
+{
+	text-align: center;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <title>New City Bakeries</title>
+    <link rel="stylesheet" href="newcitybakeries.css">
+    <script src="newcitybakeries.js"></script>
+</head>
+
+<body>
+    
+    <header><h1>New City Bakeries</h1>
+        <h3>Phone: 987-876-9876</h3>
+        <h3>Email:CityBakeries@gmail.com</h3></header>
+<div id="information">
+    <form id="bakery" onsubmit="submitbutton(); return false;">
+
+        <label for="name">Name</label> <br>
+        <input type="text" name="name" maxlength="25" pattern="[a-zA-z -]+" placeholder="Full name" id="name" autofocus
+            required> <br> <br>
+
+        <label for="streetaddress">Street Address</label> <br>
+        <input type="text" name="streetaddress" id="streetaddress" required> <br> <br>
+
+        <label for="postcode">Postal Code</label> <br>
+        <input type="text" name="postcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+            placeholder="A1A 1A1" id="postcode" required> <br> <br>
+
+        <label for="phone">Telephone Number</label> <br>
+        <input type="tel" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="1111111111" id="phone" required>
+        <br> <br>
+
+        <label for="email">Email Address</label> <br>
+        <input type="email" name="email" pattern="[a-zA-z0-9+]+@[a-z]+.[a-z]{2,3}" placeholder="abc@gmail.com"
+            id="email" required> <br><br>
+
+        <label >Cake Choice</label> <br>
+        <input type=radio name="cakeChoice" value="sCake" required onchange="calculation(0)" id="sheet_cake">Sheet Cake
+        <input type=radio name="cakeChoice" value="rCake" required onchange="calculation(1)" id="round_cake" >Round Cake <br> <br>
+
+        <label > How Many Layers?</label> <br>
+        <input type="radio" name="layerCount" value="1" required>1
+        <input type="radio" name="layerCount" value="2" required>2
+        <input type="radio" name="layerCount" value="3" required>3 <br> <br>
+
+        <table id="options">
+            <tr>
+                <td id="sheetTable">
+                    <b>Sheet Cake</b><br><br>
+                    Length (min: 30cm | max: 60cm) <br> <input type="number" name="length" min="30" max="60"
+                        placeholder="Length in cm" id="length"> <br><br>
+                    Width (min: 30cm | max: 45cm) <br><input type="number" name="width" min="30" max="45"
+                        placeholder="Width in cm" id="width"> <br>
+                </td>
+
+                <td id="roundTable">
+                    <b>Round Cake</b><br><br>
+                    Radius (min: 15cm | max: 30cm) <br><input type="number" name="radius" min="15" max="30"
+                        placeholder="Radius in cm" id="radius"> <br><br>
+                </td>
+            </tr>
+        </table> <br>
+
+        <input type="checkbox" id="creamCheese" name="creamCheese" value=5>Cream Cheese Icing <br>
+        <input type="checkbox" id="fruitAlmonds" name="fruitAlmonds" value=7>Fruit and Almonds Toppings <br>
+        <input type="checkbox" id="fruitJam" name="fruitJam" value=4>Fruit Jam Filling <br><br>
+
+        <input type=submit value="Submit your Order">
+    
+
+    
+        <h2 id="orderdetails">Your Order Details</h2>
+        <span id="result"></span>
+   
+    </form>
+</div>
+</body>
+
+</html>
